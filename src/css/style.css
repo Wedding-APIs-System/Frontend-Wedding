@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(#bffde9, #cde0fd);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.titles {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.titles h1 {
+    font-size: 3rem;
+    align-self: center;
+    font-family: cursive;
+}
+.titles h2 {
+    font-size: 1.8rem;
+    align-self: center;
+    font-family: monospace;
+}
+
+.titles h3 {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.titles p {
+    font-size: 2rem;
+    font-family: monospace;
+    align-self: flex-end;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.titles a {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 2.5rem;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: monospace;
+    height: 3rem;
+    letter-spacing: 0.1rem;
+    margin-right: 1.5rem;
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    text-decoration: none;
+    align-self: flex-end;    
+}
+
+picture {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+picture img{
+    width: 100vw;
+}
