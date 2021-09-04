@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="menu">
-            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM4NHB0IiB2aWV3Qm94PSIwIC01MyAzODQgMzg0IiB3aWR0aD0iMzg0cHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDMyaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDI3Ny4zMzIwMzFoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIvPjwvc3ZnPg==" />
+            <span>&#9776;</span>
             <ul>
                 <li><a href="">Ubicación</a></li>
                 <li><a href="">Vestimenta</a></li>
@@ -19,9 +19,28 @@
         </div>        
     </header>
     <section>
-        <img src="./src/assets/invitation.png" alt="Invitación_Personalizada">
-        <button><img src="" alt="GPS"></button>        
-        <button><img src="" alt="DRESS"></button>
+        <img class="invitation" src="./src/assets/invitation.png" alt="Invitación_Personalizada">
+        <button><img src="" alt="GPS"></button> 
+
+        <div id="sidebar">
+            <div class="sidebar_tab">
+                <img  src="https://image.flaticon.com/icons/png/512/1127/1127487.png" alt="DressCode">
+                <span>Dress Code</span>
+            </div>
+            <ul class="sidebar_dress">
+                <li>
+                    <a href="https://www.pinterest.es/pin/704883779161715805/">
+                        <img src="https://i.pinimg.com/564x/f7/13/0c/f7130c49406f31579534d0b98bafb7d9.jpg" alt="DressCode|Male">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.es/pin/308848486953908282/">
+                        <img src="https://i.pinimg.com/564x/0f/46/c8/0f46c82b175f2f30690cdbb3e29eb26f.jpg" alt="DressCode|Female">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
         <a href="./confirmation.html">CONFIRMAR</a>
     </section>
     <footer>
@@ -29,5 +48,6 @@
         <a href="#">3002692680</a>
         <p>weddingplaner@gmail.com</p>
     </footer>
+    <script src="./src/js/invitation.js"></script>
 </body>
 </html>

@@ -24,8 +24,11 @@ header .menu {
     margin-right: 2rem;
 }
 
-header .menu img {
-    width: 2rem;
+header .menu span {
+    width: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 header .menu ul {
@@ -41,7 +44,48 @@ header .menu:hover ul, ul:hover {
     display: block;
 }
 
-
-section img {
+section .invitation {
     width: 20rem;
+}
+
+#sidebar {
+    width: 16.8rem;
+    height: 6rem;
+    position: fixed;
+    background-color: aqua;
+    display: flex;
+    left: -10rem;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar .sidebar_tab {
+    position: absolute;
+    left: 10rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#sidebar ul {
+    display: flex;
+    list-style: none;
+    border: 1px solid black;
+}
+
+.sidebar_tab img{
+    padding-top: 0.3rem;
+    width: 4rem;
+}
+
+.sidebar_dress img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
 }
