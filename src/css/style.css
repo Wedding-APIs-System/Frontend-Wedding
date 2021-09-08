@@ -7,8 +7,13 @@ html {
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: "athoor";
+    src: url(/src/assets/AthoorStyleSignature.woff);
+}
+
 body {
-    background: linear-gradient(#bffde9, #cde0fd);
+    background-color: #fff7eb;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -24,48 +29,50 @@ body {
 }
 
 .titles h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     align-self: center;
-    font-family: cursive;
+    font-family: "athoor";
 }
 .titles h2 {
     font-size: 1.8rem;
     align-self: center;
-    font-family: monospace;
+    font-family: 'Baskervville', serif;
+    letter-spacing: 0.3rem;
 }
 
 .titles h3 {
     margin-top: 2rem;
-    margin-right: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-self: flex-end;
     text-align: right;
+    font-family: 'Baskervville', serif;
+    padding-right: 1rem;
 }
 
 .titles p {
-    font-size: 2rem;
-    font-family: monospace;
+    font-size: 1.5rem;
+    font-family:'Kaisei HarunoUmi', serif;
+    font-weight: 500;
     align-self: flex-end;
     margin-top: 3rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-align: center;
 }
 
 .titles a {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(164, 179, 195, 0.6);   /* rgba(164, 179, 195, 1) rgba(255, 255, 255, 0.6) rgba(182, 125, 72, 0.3) */
     border-radius: 2.5rem;
     border: none;
     color: black;
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    font-family: monospace;
-    height: 3rem;
+    font-family: 'Baskervville', serif;
     letter-spacing: 0.1rem;
-    margin-right: 1.5rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     width: fit-content;
     text-decoration: none;
+    text-align: center;
     align-self: flex-end;    
 }
 
