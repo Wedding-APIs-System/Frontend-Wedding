@@ -9,19 +9,51 @@ html {
 }
 
 body {
-    background: linear-gradient(#bffde9, #cde0fd);
+    background: #fff7eb;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+header {
+    height: 10vh;    
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+header .back {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    border: 1px solid #e0c9a6;
+}
+
+header .back a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Baskervville', serif;
+}
+
+header .back img {
+    width: 4rem;
+    
+}
+
 section {
     display: flex;
     width: 30rem;
-    height: 90vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
 }
 
 section form {
@@ -29,8 +61,8 @@ section form {
     flex-direction: column;
     height: 15rem;
     width: 25rem;
-    font-family: monospace;
-    background-color: #6ee2f7;
+    font-family: 'Baskervville', serif;
+    background-color: #e0c9a6;
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
@@ -50,7 +82,7 @@ section form input {
     padding: 0rem 1rem;
     text-align: center;
     font-size: 1.8rem;
-    font-family: monospace;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
 ::placeholder {
@@ -61,36 +93,28 @@ section form input {
 section form button {
     border: none;
     border-radius: 0.3rem;
-    background-color: #bffde9;
+    background-color: rgba(142, 174, 207, 0.9);
     font-size: 1.6rem;
-    font-family: monospace;
+    font-family: 'Baskervville', serif;
     height: 2rem;
     letter-spacing: 0.1rem;
     padding: 0rem 0.5rem;
-    margin-top: 0.6rem;
+    margin-top: 1rem;
 }
 
 footer {
     height: 10vh;
     display:flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 footer a {
     color: black;
     cursor: pointer;
-    font-size: 1.8rem;
     text-decoration: none;
-    padding-right: 3rem;
 }
-
-footer a:hover{
-    text-decoration: underline;
-}
-
-
 
 footer a img {
-    width: 3rem;
+    width: 4rem;
 }
