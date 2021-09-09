@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    background-image: url("https://drive.google.com/uc?export=view&id=1k8zOG-BsT2yU47-XW98O0L9c4YL0RLQv");
+    background-image: url("https://drive.google.com/uc?export=view&id=1SHYmrZK5WQoLikhKtp50Z-ZgKJoqMgMs");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -113,10 +113,11 @@ section .confirmation {
     padding-right: 0.3rem;
     height: 7rem;
     border:1px solid #a4b3c3;
+    border-right: none;
     background-color: #fff7eb;
     position: fixed;
     display: flex;
-    right: -18.7rem;
+    right: -21.6rem;
     top: 83%;
     align-items: center;
     z-index: 10;
@@ -129,7 +130,7 @@ section .confirmation {
 #sidebar .sidebar_tab {
     padding-top: 0.2rem;
     position: absolute;
-    right: 18.6rem;
+    right: 21.6rem;
     cursor: pointer;
     border-radius: 5rem;
 }
@@ -149,7 +150,12 @@ section .confirmation {
     text-align: center;
     color: #b77e49;
     font-weight: bold;
-    font-size: 1.2rem;
+}
+
+.sidebar_dress-p{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1rem;
 }
 
 .sidebar_dress li {
