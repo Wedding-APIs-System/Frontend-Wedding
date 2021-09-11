@@ -21,16 +21,17 @@
         </div>
     </header>
     <section>
-        <form action="">
+        <form method="">
             <h1>CONFIRMACIÓN ASISTENCIA</h1>
+            <h2 id="family_name">Familia Tovar Uribe</h2>
             <p id="number_guests">Tienes disponible (x) Cupos</p>
             <label for="guest">Cuantos Asistiran:</label>
-            <input type="number" id="guest">
+            <input type="number" id="guest" placeholder="Ejemplo: 2">
             <label for="alergy">Alergías:</label>
-            <input type="text" id="alergy">
-            <label for="description">Comentarios Adicionales</label>
-            <input type="text" id="description">
-            <button>REGISTRAR</button>
+            <textarea placeholder="Ejemplo: Mariscos, maní, gluten, nuece, etc." id="alergy" cols="1" rows="3"></textarea>            
+            <label for="description">Comentarios Adicionales:</label>
+            <textarea placeholder="Ejemplo: Camilo es vegetariano... Necesito silla para bebe... etc." id="description" cols="1" rows="5"></textarea>
+            <button id="confirmation" type="submit">CONFIRMAR</button>
         </form>
     </section>
     <footer>

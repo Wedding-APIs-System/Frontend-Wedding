@@ -22,6 +22,7 @@ section {
 }
 
 section .menu {
+    width: fit-content;
     margin-left: 1rem;
 }
 

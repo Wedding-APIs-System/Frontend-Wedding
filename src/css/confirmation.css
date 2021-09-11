@@ -5,11 +5,145 @@
 }
 
 html {
+    font-family: 'Baskervville', serif;
     font-size: 62.5%;
 }
 
+body {
+    background-color: #fff7eb;
+}
+header{
+    height: 10vh;
+}
 
+header .menu {
+    width: fit-content;
+    margin-left: 1rem;
+}
 
-footer a img {
+header .menu span{
     width: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .menu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    text-align: left;
+    margin: 0rem 0rem 0rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: #b77e49;
+}
+
+header .menu:hover ul, ul:hover {
+    display: block;
+}
+
+section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+section form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(142, 174, 207, 1);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+section form h1{
+    font-size: 1.7rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+section #family_name {
+    font-size: 1.5rem;        
+}
+
+section #number_guests {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+section form label {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+section form input{
+    outline: none;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0.2rem solid rgba(142, 174, 207, 0.3);
+    padding: 0px 0.5rem;
+    height: 2rem;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+section form textarea{
+    outline: none;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0.2rem solid rgba(142, 174, 207, 0.3);
+}
+
+::placeholder{
+    font-family:'Kaisei HarunoUmi', serif;
+}
+
+section form button{
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(142, 174, 207, 0.9);
+    font-size: 1.5rem;
+    font-family: 'Baskervville', serif;
+    height: 2.5rem;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 1.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    align-self: center;
+}
+
+
+/* section form #alergy {
+    height: 5rem;
+} */
+
+footer {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+footer a img {
+    width: 5rem;
 }
