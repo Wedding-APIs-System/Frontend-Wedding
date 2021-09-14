@@ -82,6 +82,14 @@ section form input {
     text-align: center;
     font-size: 1.8rem;
     font-family: 'Kaisei HarunoUmi', serif;
+    outline: none;
+}
+
+section .login_form #phone_error{
+    display: none;
+    color: rgb(255, 56, 56);
+    font-size: 1.5rem;
+    font-family: 'Baskervville', serif;
 }
 
 ::placeholder {

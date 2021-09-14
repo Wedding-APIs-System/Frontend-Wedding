@@ -20,14 +20,16 @@
         </div>        
     </header>
     <section>
-        <form action="">
+        <form action="./invitation.html" class="login_form" name="form" onsubmit="return validated()" >
             <label for="phone">INGRESA TU CELULAR</label>
-            <input id="phone" type="number" placeholder="Ej:3002692680">
-            <button type="button">INGRESAR</button>
+            <input autocomplete="off" name="phone_number" id="phone" type="number" placeholder="Ej:3002692680">
+            <p id="phone_error"></p>
+            <button type="submit">INGRESAR</button>
         </form>
     </section>
     <footer>
         <a href="https://wa.link/yyqe88"><img src="https://image.flaticon.com/icons/png/512/1384/1384055.png" alt="Whatsapp_Logo"></a>                
-    </footer>    
+    </footer>
+    <script src="./src/js/login.js"></script>    
 </body>
 </html>
