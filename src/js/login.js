@@ -70,7 +70,7 @@ function loginValidate() {
                     number.style.border = "none";
                     number_error.style.display = "block";
                     number_error.innerText = data.family_name;
-                    location.replace("http://127.0.0.1:5500/invitation.html");
+                    location.replace("https://wedding-apis-system.github.io/Frontend-Wedding/invitation.html");
                     sessionStorage.setItem('numberId', guest);
                 }
             })  
