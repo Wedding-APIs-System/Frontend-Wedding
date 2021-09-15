@@ -79,14 +79,45 @@ body {
     text-align: center;
     align-self: flex-end;    
 }
+.flower1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
 
-picture {
+.flower1 img{
+    width: 40vw;
+}
+
+.flower2 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.flower2 img{
+    width: 35vw;
+}
+
+.flower3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.flower3 img{
+    width: 40vw;
+}
+
+.lau_sergio {
     position: absolute;
     bottom: 0;
     z-index: -1;
 }
 
-picture img{
+.lau_sergio img{
     width: 100vw;
 }
 
