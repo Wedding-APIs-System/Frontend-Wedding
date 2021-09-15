@@ -9,10 +9,7 @@ html {
 }
 
 body {
-    
-    background-image: url("https://drive.google.com/uc?export=view&id=1BN2Ge5jhhxYPvBSw3SKkO4Zz4aOGnsMT");
-    background-size: cover;
-    background-position: center;
+    background-color: #eee8e1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +45,38 @@ header .back a {
 header .back img {
     width: 4rem;
     
+}
+
+.flower1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.flower1 img{
+    width: 40vw;
+}
+
+.flower2 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.flower2 img{
+    width: 35vw;
+}
+
+.flower3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.flower3 img{
+    width: 40vw;
 }
 
 section {
