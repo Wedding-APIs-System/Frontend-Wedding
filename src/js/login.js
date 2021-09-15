@@ -71,7 +71,7 @@ function loginValidate() {
                     number_error.style.display = "block";
                     number_error.innerText = data.family_name;
                     location.replace("http://127.0.0.1:5500/invitation.html");
-                    return guest;
+                    sessionStorage.setItem('numberId', guest);
                 }
             })  
             .catch(err => console.error("Este"+ err));            
