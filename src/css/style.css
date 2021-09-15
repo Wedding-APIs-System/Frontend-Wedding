@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: #fff7eb;
+    background-color: #eee8e1;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -29,9 +29,13 @@ body {
 }
 
 .titles h1 {
+    background: linear-gradient(90deg, rgba(246,226,126,1) 0%, rgba(203,155,81,1) 50%, rgba(246,226,126,1) 100%);
+    background-clip: border-box;
     font-size: 5rem;
     align-self: center;
     font-family: "athoor";
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .titles h2 {
     font-size: 1.8rem;
@@ -60,7 +64,7 @@ body {
 }
 
 .titles a {
-    background-color: rgba(164, 179, 195, 0.6);   /* rgba(164, 179, 195, 1) rgba(255, 255, 255, 0.6) rgba(182, 125, 72, 0.3) */
+    background-color: rgba(182, 125, 72, 0.3);   /* rgba(164, 179, 195, 1) rgba(255, 255, 255, 0.6) rgba(182, 125, 72, 0.3) */
     border-radius: 2.5rem;
     border: none;
     color: black;
