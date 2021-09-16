@@ -147,7 +147,6 @@ section form button:hover {
 
 footer {
     display: flex;
-    height: 10vh;
     justify-content: center;
 }
 footer a img {

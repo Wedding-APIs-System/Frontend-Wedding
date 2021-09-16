@@ -142,16 +142,13 @@ section form button {
 }
 
 footer {
-    height: 10vh;
     display:flex;
     align-items: flex-start;
     justify-content: center;
 }
 
 footer a {
-    color: black;
     cursor: pointer;
-    text-decoration: none;
 }
 
 footer a img {
