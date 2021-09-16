@@ -1,4 +1,5 @@
 const family = document.getElementById('family_user');
+const assistants = document.getElementById('number_guests');
 const API = 'https://wedding-325203.rj.r.appspot.com/login/';
 const API_post = 'https://wedding-325203.rj.r.appspot.com/confirmation/';
 const guest = sessionStorage.getItem('numberId');
@@ -9,11 +10,11 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         family.innerText = data.family_name;
+        assistants.innerText = data.Number_of_assistants;
         console.log(data);
     })
     .catch(err => console.error("Este"+ err));
  
-console.log(sessionStorage.getItem('numberId'));
 
 /* function send() {
     Swal.fire({
@@ -40,10 +41,16 @@ myForm.addEventListener('submit', function(e) {
         body: formData
     }) 
     .then(function (response){
-        return response.text();
+        return response.json();
     }) 
-    .then(function (text) {
-        console.log(text);
+    .then(function (data) {
+        console.log(data);
+        Swal.fire({
+            icon: 'success',
+            title: 'Confirmación Exitosa',
+            showConfirmButton: false,
+            timer: 1500
+        })
     })
     .catch(function (error) {
         console.error(error);
