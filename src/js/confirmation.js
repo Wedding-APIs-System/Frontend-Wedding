@@ -1,4 +1,5 @@
 const family = document.getElementById('family_user');
+const asistants = document.getElementById('number_guests');
 const API = 'https://wedding-325203.rj.r.appspot.com/login/';
 const API_post = 'https://wedding-325203.rj.r.appspot.com/confirmation/';
 const guest = sessionStorage.getItem('numberId');
@@ -9,6 +10,7 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         family.innerText = data.family_name;
+        asistants.innerText = "Tienes disponible " + "(" + data.Number_of_assistants + ")" + " cupos";
         console.log(data);
     })
     .catch(err => console.error("Este"+ err));

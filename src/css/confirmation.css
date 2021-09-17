@@ -90,11 +90,13 @@ section #family_name {
 }
 
 section #number_guests {
+    font-family: 'Kaisei HarunoUmi', serif;
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
 }
 
 section form label {
+    font-family: 'Kaisei HarunoUmi', serif;
     margin-top: 1rem;
     font-size: 1.5rem;
     color: black;
