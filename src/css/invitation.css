@@ -42,6 +42,10 @@ section .menu ul {
     font-size: 1.5rem;
 }
 
+.menu li {
+    margin-top: 0.5rem;
+}
+
 .menu li a {
     text-decoration: none;
     color: black;
@@ -59,13 +63,14 @@ section .menu:hover ul, ul:hover {
 }
 
 section .cointainer_countdown {
-    background-color: rgba(182, 125, 72, 0.5);
+    background-color: rgba(124, 149, 120, 1);
     width: fit-content;
     height: 2rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     position: absolute;
     align-self: center;
+    color: white;
 }
 
 .cointainer_countdown p {
@@ -96,18 +101,18 @@ section .confirmation {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     border: none;
-    color: black;
+    color: white;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 0.3rem 1rem 0rem 1rem;
-    background-color: rgba(182, 125, 72, 0.5);  /* rgba(181, 203, 193, 0.5) rgba(182, 125, 72, 0.5)  */
+    background-color: rgba(124, 149, 120, 1);  /* rgba(181, 203, 193, 0.5) rgba(182, 125, 72, 0.5)  */
     width: fit-content;
-    height: 2rem;
+    height: 2.5rem;
     text-align: center;
     align-self: center;
     position: absolute;
     bottom: 0px;
-    font-family: 'Baskervville', serif;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
 #sidebar {
@@ -171,14 +176,13 @@ section .confirmation {
     border-radius: 0.8rem;
 }
 
-
 .sidebar_dress img {
     width: 6rem;
     height: 6rem;
     object-fit: cover;    
 }
 
-footer {
+/* footer {
     height: 8vh;
     display: flex;
     align-items: center;
@@ -188,4 +192,4 @@ footer {
 footer .wpp_logo {
     width: 3rem;
     margin-right: 1rem;
-}
+} */

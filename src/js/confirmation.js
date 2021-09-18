@@ -17,14 +17,14 @@ fetch(url)
  
 console.log(sessionStorage.getItem('numberId'));
 
-/* function send() {
+function send() {
     Swal.fire({
         icon: 'success',
         title: 'Confirmación Exitosa',
         showConfirmButton: false,
         timer: 1500
     })
-} */
+}
 
 
 
@@ -34,21 +34,22 @@ const myForm = document.getElementById('myForm');
 
 myForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    console.log('funciona');
-    console.log(url_post);
+    const asistencia = document.getElementById('guest').value;
+    const alergias = document.getElementById('alergy').value;
+    const comentarios = document.getElementById('description').value;
+
+
     const formData = new FormData(this);
     fetch(url_post, {
         method: 'PUT',
-        body: formData
+        body: JSON.stringify ({
+        attendance_confirmation: true,
+        allergies: alergias,
+        additional_comments: comentarios,
+        }),
     }) 
-    .then(function (response){
-        return response.text();
-    }) 
-    .then(function (text) {
-        console.log(text);
-    })
-    .catch(function (error) {
-        console.error(error);
-    })
+    .then ((response) => response.json())
+    .then ((json) => console.log(json))
+    .catch(error => console.error(error))
 })
 

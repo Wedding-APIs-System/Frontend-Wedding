@@ -37,6 +37,10 @@ header .menu ul {
     font-size: 1.5rem;
 }
 
+.menu li {
+    margin-top: 0.5rem;
+}
+
 .menu li a {
     text-decoration: none;
     color: black;
@@ -151,9 +155,18 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+footer a {
+    position: absolute;
+    bottom: 1rem;
+    cursor: pointer;
+}
+
 footer a img {
     width: 5rem;
 }
+
+
 
 footer .flower_bottom {
     position: absolute;
