@@ -124,7 +124,7 @@ section .confirmation {
     position: fixed;
     display: flex;
     right: -21.6rem;
-    top: 83%;
+    top: 88%;
     align-items: center;
     z-index: 10;
 }
@@ -133,7 +133,7 @@ section .confirmation {
     right: 0;
 }
 
-#sidebar .sidebar_tab {
+#sidebar .sidebar_tab {    
     padding-top: 0.2rem;
     position: absolute;
     right: 21.6rem;
@@ -193,3 +193,45 @@ footer .wpp_logo {
     width: 3rem;
     margin-right: 1rem;
 } */
+
+/* .kreep {
+    position: fixed;
+    right: 0;
+    top: 70%;
+}
+
+.button5 {
+    background-color: #a4b3c3;
+    border: 2px solid #a4b3c3;
+    width: 2rem;
+    height: 7rem;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;  Safari 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.button5:hover {
+    background-color: #555555;
+} */
+
+/*Bounce*/
+@keyframes sidebar_tab {
+    0% {-webkit-transform: scale(1.1,.9);
+        transform: scale(1.1,.9);}
+   50% { -webkit-transform: scale(.9,1.1) translateY(-.5rem)}
+   70% { -webkit-transform: scale(1);
+         transform: scale(1);}
+}
+
+div.sidebar_tab {
+  display: inline-block;
+  /*name-duration-function(ease,eas-in,linear)-delay-count-direction */
+  animation: sidebar_tab 0.7s ease 2s infinite alternate;
+}
+
+div.sidebar_tab:hover {
+  animation: none;
+}
