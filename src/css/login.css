@@ -123,6 +123,7 @@ section .login_form #phone_error{
 ::placeholder {
     color: grey;
     font-family: monospace;
+    font-size: 1.5rem;
 }
 
 section form button {
