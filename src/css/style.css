@@ -48,7 +48,7 @@ body {
 .titles h3 {
     width: 70vw;
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     align-self: flex-end;
     text-align: center;
     font-family: 'Baskervville', serif;
@@ -185,6 +185,9 @@ body {
 @media only screen and (min-width: 360px) {
     .lau_sergio img{
         height: 40rem;
+    }
+    .titles h3 {
+        font-size: 1.5rem;
     }
 }
 
