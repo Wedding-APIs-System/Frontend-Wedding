@@ -10,14 +10,222 @@ html {
 }
 
 body {
+    height: 90vh;
+    display: flex;
     background-color: #fff7eb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 header{
-    height: 10vh;
+    width: 100%;
 }
 
 header .menu {
+    width: 4rem;
+    margin-left: 1rem;
+}
+
+header .menu span{
+    width: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .menu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    text-align: left;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: #b77e49;
+}
+
+header .menu:hover ul, ul:hover {
+    display: inline;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(142, 174, 207, 1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+section form h1{
+    font-size: 1.5rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+section #family_name {
+    font-size: 1.3rem;        
+}
+
+section #number_guests {
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+
+section form label {
+    font-family: 'Kaisei HarunoUmi', serif;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+
+section form input{
+    outline: none;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0.2rem solid rgba(142, 174, 207, 0.3);
+    padding: 0px 0.5rem;
+    height: 2rem;
+}
+
+section form textarea{
+    outline: none;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0.2rem solid rgba(142, 174, 207, 0.3);
+    font-size: 1.3rem;
+}
+
+::placeholder{
+    font-family:'Kaisei HarunoUmi', serif;
+    font-size: 1.2rem;
+}
+
+section form button{
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(142, 174, 207, 0.9);
+    font-size: 1.5rem;
+    font-family: 'Baskervville', serif;
+    height: 2.5rem;
+    letter-spacing: 0.1rem;
+    padding: 0.2rem 1.5rem;
+    margin-top: 1rem;
     width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+section form button:hover {
+    background-color: rgba(182, 125, 72, 0.3);
+}
+
+.flower1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.flower1 img {
+    width: 12rem;    
+}
+
+.flower2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.flower2 img {
+    width: 15rem;
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.wpp_button {
+    margin-top: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
+}
+
+.wpp_button img {
+    width: 4rem;
+}
+
+@media only screen and (min-width: 360px) {
+    .flower1 img {
+        width: 18rem;    
+    }
+
+    .flower2 img {
+        width: 20rem;
+    }
+    header .menu:hover ul, ul:hover {
+        display: block;
+    }
+    
+    header .menu ul {
+        margin: 0rem 0rem 0rem 0.5rem;
+    }
+    
+    .menu li {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    section form h1{
+        font-size: 1.8rem;
+    }
+    
+    section #family_name {
+        font-size: 1.5rem;        
+    }
+    
+    section #number_guests {
+        font-size: 1.5rem;
+    }
+    
+    section form label {
+        font-size: 1.5rem;
+    }
+    section form textarea{
+        font-size: 1.5rem;
+    }
+    
+    ::placeholder{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+/* header .menu {
+    width: 4rem;
     margin-left: 1rem;
 }
 
@@ -54,130 +262,5 @@ header .menu ul {
 }
 
 header .menu:hover ul, ul:hover {
-    display: block;
-}
-
-header .flower_top {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.flower_top img {
-    width: 18rem;    
-}
-
-section {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-}
-
-section form {
-    width: 30rem;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid rgba(142, 174, 207, 1);
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-section form h1{
-    font-size: 1.7rem;
-    align-self: center;
-    margin-bottom: 1rem;
-}
-
-section #family_name {
-    font-size: 1.5rem;        
-}
-
-section #number_guests {
-    font-family: 'Kaisei HarunoUmi', serif;
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
-}
-
-section form label {
-    font-family: 'Kaisei HarunoUmi', serif;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: black;
-}
-
-section form input{
-    outline: none;
-    background-color: transparent;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0.2rem solid rgba(142, 174, 207, 0.3);
-    padding: 0px 0.5rem;
-    height: 2rem;
-}
-
-section form textarea{
-    outline: none;
-    background-color: transparent;
-    border-left: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0.2rem solid rgba(142, 174, 207, 0.3);
-}
-
-::placeholder{
-    font-family:'Kaisei HarunoUmi', serif;
-}
-
-section form button{
-    border: none;
-    border-radius: 1rem;
-    background-color: rgba(142, 174, 207, 0.9);
-    font-size: 1.5rem;
-    font-family: 'Baskervville', serif;
-    height: 2.5rem;
-    letter-spacing: 0.1rem;
-    padding: 0.2rem 1.5rem;
-    margin-top: 1rem;
-    width: fit-content;
-    align-self: center;
-    cursor: pointer;
-}
-
-section form button:hover {
-    background-color: rgba(182, 125, 72, 0.3);
-}
-
-
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-/* footer a {
-    position: absolute;
-    bottom: 1rem;
-    cursor: pointer;
+    display: inline-block;
 } */
-
-footer a img {
-    width: 5rem;
-}
-
-
-footer .flower_bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.flower_bottom img {
-    width: 20rem;
-    -webkit-transform:rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
