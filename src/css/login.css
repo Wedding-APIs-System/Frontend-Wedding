@@ -13,18 +13,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     justify-content: space-between;
 }
 
 header {
-    margin-top: 1rem;
-    /* height: 10vh; */    
+    margin-top: 0.8rem;
     width: 100%;
-    display: flex;    
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
 }
 
 header .back {
@@ -46,8 +41,7 @@ header .back a {
 }
 
 header .back img {
-    width: 4rem;
-    
+    width: 4rem;    
 }
 
 .flower1 {
@@ -85,7 +79,6 @@ header .back img {
 section {
     display: flex;
     width: 30rem;
-    /* height: 80vh; */
     justify-content: center;
     align-items: center;
 }
@@ -146,18 +139,11 @@ section form button {
     cursor: pointer;
 }
 
-footer {
-    display:flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-footer a {
-    position: absolute;
+.wpp_button {
     bottom: 1rem;
     cursor: pointer;
 }
 
-footer a img {
+.wpp_button img {
     width: 4rem;
 }
