@@ -38,6 +38,7 @@ body {
     -webkit-background-clip: text;
 }
 .titles h2 {
+    margin-top: 1rem;
     font-size: 1.8rem;
     align-self: center;
     font-family: 'Baskervville', serif;
@@ -70,7 +71,8 @@ body {
 }
 
 .label_invitation a {
-    background-color: rgba(182, 125, 72, 0.3);   /* rgba(164, 179, 195, 1) rgba(255, 255, 255, 0.6) rgba(182, 125, 72, 0.3) */
+    margin-top: 0.5rem;
+    background-color: rgb(229, 189, 151);   /* rgba(164, 179, 195, 1) rgba(255, 255, 255, 0.6) rgba(182, 125, 72, 0.3) */
     border-radius: 2.5rem;
     border: none;
     color: black;
@@ -83,6 +85,7 @@ body {
     width: fit-content;
     text-decoration: none;
     text-align: center; 
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.4);
 }
 .flower1 {
     position: absolute;
@@ -119,11 +122,12 @@ body {
 .lau_sergio {
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: -1;
 }
 
 .lau_sergio img{
-    width: 100vw;
+    height: 30rem;
 }
 
 .carrousel {
@@ -171,4 +175,21 @@ body {
     width: 20rem;
     height: 25rem;
     object-fit: cover; /*Guardar la proporción de la imagen y que se acomode a las medidas que establecimos */
+}
+
+/* @media (device-width: 360px) {
+    .lau_sergio img{
+        height: 40rem;
+} */
+
+@media only screen and (min-width: 360px) {
+    .lau_sergio img{
+        height: 40rem;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    .lau_sergio img{
+        height: 50rem;
+    }
 }
