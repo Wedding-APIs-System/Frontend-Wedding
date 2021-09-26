@@ -117,14 +117,14 @@ section .confirmation {
 
 #sidebar {
     padding-right: 0.3rem;
-    height: 7rem;
+    height: 9rem;
     border:1px solid #a4b3c3;
     border-right: none;
     background-color: #fff7eb;
     position: fixed;
     display: flex;
-    right: -21.6rem;
-    top: 88%;
+    right: -25.1rem;
+    top: 83vh;
     align-items: center;
     z-index: 10;
 }
@@ -136,12 +136,14 @@ section .confirmation {
 #sidebar .sidebar_tab {    
     padding-top: 0.2rem;
     position: absolute;
-    right: 21.6rem;
+    right: 25.1rem;
     cursor: pointer;
     border-radius: 5rem;
 }
 
 .sidebar_tab img {
+    width: 1.8rem;
+    height: 9rem;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
@@ -156,12 +158,13 @@ section .confirmation {
     text-align: center;
     color: #b77e49;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .sidebar_dress-p{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .sidebar_dress li {
@@ -177,8 +180,8 @@ section .confirmation {
 }
 
 .sidebar_dress img {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     object-fit: cover;    
 }
 
