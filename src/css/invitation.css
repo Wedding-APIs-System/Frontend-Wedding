@@ -8,10 +8,6 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    background-color: #faf8f3;
-}
-
 section {
     background-image: url("https://res.cloudinary.com/stovarm/image/upload/v1631803306/Wedding_Web/Invitation_mobile_ypu5mb.jpg");
     background-size: cover;
@@ -19,6 +15,7 @@ section {
     height: 100vmax;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 section .menu {
@@ -110,7 +107,7 @@ section .confirmation {
     height: 2.5rem;
     text-align: center;
     align-self: center;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     font-family: 'Kaisei HarunoUmi', serif;
 }
