@@ -185,14 +185,14 @@ body {
 @media only screen and (min-width: 360px) {
     .lau_sergio img{
         height: 40rem;
+    }    
+}
+
+@media only screen and (min-width: 400px) {
+    .lau_sergio img{
+        height: 50rem;
     }
     .titles h3 {
         font-size: 1.5rem;
-    }
-}
-
-@media only screen and (min-width: 390px) {
-    .lau_sergio img{
-        height: 50rem;
     }
 }
